@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeding Hope</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Img/Logo.jpg" alt="Feedinghope.com">
+        </div>
+
+        <ul>
+            <li class="item"><a onclick="navigateTo('index')">HOME</a></li>
+            <li class="item"><a onclick="navigateTo('services')">SERVICES</a></li>
+            <li class="item"><a onclick="navigateTo('aboutUs')">ABOUT US</a></li>
+            <li class="item"><a onclick="navigateTo('login')">REGISTER/LOGIN</a></li>
+        </ul>
+        
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Feeding Hope</h1>
+        <p>Feedinghope, we believe in the power of community and the simple act of sharing...</p>
+        <button class="btn" ><a onclick="navigateTo('login')">Join Us Now</a></button>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.feedinghope.com. All rights reserved!
+        </div>
+    </footer>
+    <!-- Add this script to your HTML -->
+<script>
+    function navigateTo(page) {
+      const url = `../html/${page}.html`;
+      window.location.href = url;
+    }
+  </script>
+  
+
+    <script src="../script.js"></script>
+</body>
+</html>

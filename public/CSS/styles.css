@@ -1,0 +1,94 @@
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+
+#navbar::before{
+    content:"" ;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 8px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 9px 9px;
+    filter: invert(100%);
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../Img/Bg2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.active{
+    color: aliceblue;
+}
+
+
+#services{
+    margin: 34px ;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(76, 52, 48);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(236, 237, 235);
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+footer{
+    background: white;
+    color: black;
+    padding: 9px 20px;
+}

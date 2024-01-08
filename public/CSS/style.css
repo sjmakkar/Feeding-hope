@@ -1,0 +1,135 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+
+#navbar::before{
+    content:"" ;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 8px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 9px 9px;
+    filter: invert(100%);
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.active{
+    color: aliceblue;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content:"" ;
+    display: flex;
+    background: url('../Img/Bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+footer{
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    bottom: 0px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.8rem;
+    padding: 72px 21px;
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(24, 16, 15);
+    background-color: rgb(76, 52, 48);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 55px;
+    cursor: pointer;
+}
+
+
+.center{
+    text-align: center;
+}
+
+
